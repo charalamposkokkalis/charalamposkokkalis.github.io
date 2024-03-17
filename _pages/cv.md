@@ -9,7 +9,10 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+<embed src="{{ site.baseurl }}/files/cv.pdf" width="600" height="700" type='application/pdf'> 
+
+
+<!-- Education
 ======
 * PhD in Informatics, University of Edinburgh, 2023 -
 * MCompSci in Computer Science, University of Oxford, 2018-2022
@@ -24,7 +27,7 @@ Work experience
 * Software Development Engineering Intern
   * Amazon Inc.
   * London UK
-  * Summer 2021
+  * Summer 2021 -->
   
 <!-- Skills
 ======
