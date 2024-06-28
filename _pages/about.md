@@ -25,7 +25,8 @@ My research interests lie in the intersection of Theoretical Computer Science an
 
 * _On the Computation of Equilibria in Discrete First-Price Auctions_\
 A. Filos-Ratsikas, Y. Giannakopoulos, A. Hollender, **C. Kokkalis**.\
-To appear in the 25th ACM Conference on Economics and Computation **(EC'24)** [[arXiv]](https://arxiv.org/abs/2402.12068){:target="_blank"}
+To appear in the 25th ACM Conference on Economics and Computation **(EC'24)**\
+[[arXiv]](https://arxiv.org/abs/2402.12068){:target="_blank"} [[WALE'24 Poster]]({{ site.baseurl }}/files/WALE24poster.pdf){:target="_blank"}
 
 ## Preprints
 
