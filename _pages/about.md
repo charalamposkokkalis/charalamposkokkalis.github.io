@@ -20,7 +20,7 @@ My research interests lie in the intersection of Theoretical Computer Science an
 
 * _18/05/2024_: Our paper [On the Computation of Equilibria in Discrete First-Price Auctions](https://arxiv.org/abs/2402.12068){:target="_blank"} has been accepted to [EC'24](https://ec24.sigecom.org/){:target="_blank"} - see you in New Haven!
 
-* _09/03/2024_: In June 2024, I will be attending the [Workshop on Algorithms and Economics (WALE 2024)](https://wale.gr/2024/){:target="_blank"} in Kefalonia, Greece.
+* _09/03/2024_: In June 2024, I will be attending and presenting a poster at the [Workshop on Algorithms and Economics (WALE 2024)](https://wale.gr/2024/){:target="_blank"} in Kefalonia, Greece.
 
 
 ## Publications
