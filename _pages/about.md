@@ -16,6 +16,8 @@ My research interests lie in the intersection of Theoretical Computer Science an
 
 ## News
 
+* _06/11/2024_: I am a member of the Local Support Team for [WINE 2024](https://wine2024.org/){:target="_blank"}, which will take place in Edinburgh, on 2-5 December 2024.
+
 * _10/07/2024_: In August 2024, I will be attending the [ADFOCS 2024](https://conferences.mpi-inf.mpg.de/adfocs24/){:target="_blank"} summer school organized by the [Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/home){:target="_blank"} in Saarbrücken, Germany.
 
 * _18/05/2024_: Our paper [On the Computation of Equilibria in Discrete First-Price Auctions](https://arxiv.org/abs/2402.12068){:target="_blank"} has been accepted to [EC'24](https://ec24.sigecom.org/){:target="_blank"} - see you in New Haven!
