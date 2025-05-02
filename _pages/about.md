@@ -13,6 +13,8 @@ Prior to that, I received a [MCompSci](https://www.ox.ac.uk/admissions/undergrad
 
 My research interests lie in the intersection of Theoretical Computer Science and Economics, namely in the field of Algorithmic Game Theory. Thus far in my PhD, I have primarily worked on topics in Auction Theory, investigating the complexity of equilibrium computation in single-item first-price auctions, as well as autobidding auctions.
 
+I'm also organizing the weekly [Edinburgh CS/Econ Seminar]({{ site.baseurl }}/seminar), which usually takes place on Thursdays.
+Please reach out to me if you are interested in giving a talk!
 
 ## News
 
