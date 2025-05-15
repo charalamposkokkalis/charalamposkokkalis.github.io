@@ -11,6 +11,10 @@ Welcome to our weekly seminar series! Below is a list of previous talks. Please 
 
 ## Past Talks
 
+### 📅 May 15, 2025  
+**Speaker:** Mohan Dantam  
+**Title:** *Finite-memory Strategies for Almost-sure Energy-MeanPayoff Objectives in MDPs*  
+
 ### 📅 May 1, 2025  
 **Speaker:** Aris Filos-Ratsikas   
 **Title:** *Consensus Halving*  
