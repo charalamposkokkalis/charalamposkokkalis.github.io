@@ -11,6 +11,10 @@ Welcome to our weekly seminar series! Below is a list of previous talks. Please 
 
 ## Past Talks
 
+### 📅 May 22, 2025  
+**Speaker:** Argyris Deligkas (Royal Holloway University of London)    
+**Title:** *EF1 and EFX Orientations*  
+
 ### 📅 May 15, 2025  
 **Speaker:** Mohan Dantam  
 **Title:** *Finite-memory Strategies for Almost-sure Energy-MeanPayoff Objectives in MDPs*  

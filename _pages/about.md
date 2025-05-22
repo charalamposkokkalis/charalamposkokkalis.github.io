@@ -18,17 +18,19 @@ Please reach out to me if you are interested in giving a talk!
 
 ## News
 
-* _14/05/2025_: Our paper _Equilibrium Computation in First-Price Auctions with Correlated Priors_ (joint work with Aris Filos-Ratsikas, Yiannis Giannakopoulos, and Alexandros Hollender) has been accepted to [EC'25](https://ec25.sigecom.org/){:target="_blank"} - see you in Stanford!
+* _May 14, 2025_: Our paper _Equilibrium Computation in First-Price Auctions with Correlated Priors_ (joint work with Aris Filos-Ratsikas, Yiannis Giannakopoulos, and Alexandros Hollender) has been accepted to [EC'25](https://ec25.sigecom.org/){:target="_blank"} - see you in Stanford!
 
-* _13/05/2025_: I will participate in the 1st UK Workshop for Junior Researchers in Economics and Computation ([JECCO 2025](https://jecco2025.gitlab.io/){:target="_blank"}), which will take place in Edinburgh, on 15-16 June 2025.
+* _May 13, 2025_: I will participate in the 1st UK Workshop for Junior Researchers in Economics and Computation ([JECCO 2025](https://jecco2025.gitlab.io/){:target="_blank"}), which will take place in Edinburgh, on 15-16 June 2025.
 
-* _06/11/2024_: I am a member of the Local Support Team for [WINE 2024](https://wine2024.org/){:target="_blank"}, which will take place in Edinburgh, on 2-5 December 2024.
+* _Apr. 29, 2025_: I gave a talk at the Theory Seminar of the [Archimedes Research Unit](https://archimedesai.gr/en/){:target="_blank"} in Athens! 
 
-* _10/07/2024_: In August 2024, I will be attending the [ADFOCS 2024](https://conferences.mpi-inf.mpg.de/adfocs24/){:target="_blank"} summer school organized by the [Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/home){:target="_blank"} in Saarbrücken, Germany.
+* _Nov. 06, 2024_: I am a member of the Local Support Team for [WINE 2024](https://wine2024.org/){:target="_blank"}, which will take place in Edinburgh, on 2-5 December 2024.
 
-* _18/05/2024_: Our paper [On the Computation of Equilibria in Discrete First-Price Auctions](https://arxiv.org/abs/2402.12068){:target="_blank"} has been accepted to [EC'24](https://ec24.sigecom.org/){:target="_blank"} - see you in New Haven!
+* _Jul. 10, 2024_: In August 2024, I will be attending the [ADFOCS 2024](https://conferences.mpi-inf.mpg.de/adfocs24/){:target="_blank"} summer school organized by the [Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/home){:target="_blank"} in Saarbrücken, Germany.
 
-* _09/03/2024_: In June 2024, I will be attending and presenting a poster at the Workshop on Algorithms and Economics ([WALE 2024](https://wale.gr/2024/){:target="_blank"}) in Kefalonia, Greece.
+* _May 18, 2024_: Our paper [On the Computation of Equilibria in Discrete First-Price Auctions](https://arxiv.org/abs/2402.12068){:target="_blank"} has been accepted to [EC'24](https://ec24.sigecom.org/){:target="_blank"} - see you in New Haven!
+
+* _Mar. 09, 2024_: In June 2024, I will be attending and presenting a poster at the Workshop on Algorithms and Economics ([WALE 2024](https://wale.gr/2024/){:target="_blank"}) in Kefalonia, Greece.
 
 
 ## Publications
@@ -48,3 +50,11 @@ A. Filos-Ratsikas, Y. Giannakopoulos, A. Hollender, **C. Kokkalis**.\
 **C.Kokkalis**.\
 MCompSci Thesis, University of Oxford. 2022. [[pdf]]({{ site.baseurl }}/files/thesis.pdf){:target="_blank"}
 
+## Other Experience
+### Subreviewing
+ESA 2025
+
+### Organizational
+* Organizing the [Edinburgh CS/Econ Seminar]({{ site.baseurl }}/seminar).
+
+* Member of the Local Support Team for WINE 2024.
