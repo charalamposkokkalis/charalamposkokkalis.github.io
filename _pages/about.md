@@ -18,6 +18,8 @@ Please reach out to me if you are interested in giving a talk!
 
 ## News
 
+* _May. 27, 2025_: I gave a talk at the [Formal Analysis, Theory and Algortithms (FATA)](https://www.gla.ac.uk/schools/computing/research/researchsections/fata-section){:target="_blank"} Seminar of the University of Glasgow!
+
 * _May 14, 2025_: Our paper _Equilibrium Computation in First-Price Auctions with Correlated Priors_ (joint work with Aris Filos-Ratsikas, Yiannis Giannakopoulos, and Alexandros Hollender) has been accepted to [EC'25](https://ec25.sigecom.org/){:target="_blank"} - see you in Stanford!
 
 * _May 13, 2025_: I will participate in the 1st UK Workshop for Junior Researchers in Economics and Computation ([JECCO 2025](https://jecco2025.gitlab.io/){:target="_blank"}), which will take place in Edinburgh, on 15-16 June 2025.
