@@ -40,7 +40,7 @@ Please reach out to me if you are interested in giving a talk!
 2. _Equilibrium Computation in First-Price Auctions with Correlated Priors_\
 A. Filos-Ratsikas, Y. Giannakopoulos, A. Hollender, **C. Kokkalis**.\
 To appear in the 26th ACM Conference on Economics and Computation **(EC'25)**\
-[[arxiv]](https://arxiv.org/abs/2506.05322){:target="_blank"}  
+[[arΧiv]](https://arxiv.org/abs/2506.05322){:target="_blank"}  
 
 1. _On the Computation of Equilibria in Discrete First-Price Auctions_\
 A. Filos-Ratsikas, Y. Giannakopoulos, A. Hollender, **C. Kokkalis**.\
