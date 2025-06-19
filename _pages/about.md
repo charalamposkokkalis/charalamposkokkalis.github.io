@@ -53,12 +53,3 @@ A. Filos-Ratsikas, Y. Giannakopoulos, A. Hollender, **C. Kokkalis**.\
 * _A Study of Variants of PPA-complete Problems_\
 **C.Kokkalis**.\
 MCompSci Thesis, University of Oxford. 2022. [[pdf]]({{ site.baseurl }}/files/thesis.pdf){:target="_blank"}
-
-## Other Experience
-### Subreviewing
-ESA 2025
-
-### Organizational
-* Organizing the [Edinburgh CS/Econ Seminar]({{ site.baseurl }}/seminar).
-
-* Member of the Local Support Team for WINE 2024.

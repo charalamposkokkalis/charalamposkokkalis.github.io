@@ -11,8 +11,12 @@ Welcome to our weekly seminar series! Below is a list of previous talks. Please 
 
 ## Past Talks
 
+### 📅 June 19, 2025  
+**Guest Speaker:** Vasilis Christoforidis (Aristotle University of Thessaloniki, Archimedes RC)    
+**Title:** *Maximin Share Guarantees for Few Agents with Subadditive Valuations*  
+
 ### 📅 May 22, 2025  
-**Speaker:** Argyris Deligkas (Royal Holloway University of London)    
+**Guest Speaker:** Argyris Deligkas (Royal Holloway University of London)    
 **Title:** *EF1 and EFX Orientations*  
 
 ### 📅 May 15, 2025  
