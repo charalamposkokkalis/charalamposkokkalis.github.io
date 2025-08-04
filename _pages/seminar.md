@@ -11,6 +11,10 @@ Welcome to our weekly seminar series! Below is a list of previous talks. Please 
 
 ## Past Talks
 
+### 📅 July 24, 2025  
+**Speaker:** Jan Bobolz    
+**Title:** *Cryptography meets game theory: Rational MPC and problems with weak domination.*  
+
 ### 📅 June 19, 2025  
 **Guest Speaker:** Vasilis Christoforidis (Aristotle University of Thessaloniki, Archimedes RC)    
 **Title:** *Maximin Share Guarantees for Few Agents with Subadditive Valuations*  
