@@ -8,10 +8,10 @@ redirect_from:
 ---
 
 
-I'm a second-year PhD candidate at the University of Edinburgh, where I'm fortunate to be advised by Dr. [Aris Filos-Ratsikas](https://arisfilosratsikas.com/){:target="_blank"}, within the [Laboratory for Foundations of Computer Science](https://web.inf.ed.ac.uk/lfcs){:target="_blank"}.
+I'm a third-year PhD candidate at the University of Edinburgh, where I'm fortunate to be advised by Dr. [Aris Filos-Ratsikas](https://arisfilosratsikas.com/){:target="_blank"}, within the [Laboratory for Foundations of Computer Science](https://web.inf.ed.ac.uk/lfcs){:target="_blank"}.
 Prior to that, I received a [MCompSci](https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/computer-science){:target="_blank"} from the University of Oxford, where I was also fortunate to be supervised by Prof. [Paul Goldberg](https://www.cs.ox.ac.uk/people/paul.goldberg/index1.html){:target="_blank"} for my thesis.
 
-My research interests lie in the intersection of Theoretical Computer Science and Economics, namely in the field of Algorithmic Game Theory. Thus far in my PhD, I have primarily worked on topics in Auction Theory, investigating the complexity of equilibrium computation in single-item first-price auctions, as well as autobidding auctions.
+My research interests lie in the intersection of Theoretical Computer Science and Economics, namely in the field of Algorithmic Game Theory. Recently, I have been studying problems in Auction Theory, with an emphasis on the complexity of computing equilibria in such settings.
 
 I'm also organizing the weekly [Edinburgh CS/Econ Seminar]({{ site.baseurl }}/seminar), which usually takes place on Thursdays.
 Please reach out to me if you are interested in giving a talk!
