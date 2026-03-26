@@ -34,6 +34,12 @@ Please reach out to me if you are interested in giving a talk!
 
 * _Mar. 09, 2024_: In June 2024, I will be attending and presenting a poster at the Workshop on Algorithms and Economics ([WALE 2024](https://wale.gr/2024/){:target="_blank"}) in Kefalonia, Greece.
 
+## Preprints
+
+1. _Efficient Equilibrium Computation in Symmetric First-Price Auctions_\
+A. Filos-Ratsikas, Y. Giannakopoulos, A. Hollender, **C. Kokkalis**.\
+[[arXiv]](https://arxiv.org/abs/2603.24317){:target="_blank"}
+{: reversed="reversed"}
 
 ## Publications
 
@@ -48,8 +54,12 @@ A. Filos-Ratsikas, Y. Giannakopoulos, A. Hollender, **C. Kokkalis**.\
 [[arXiv]](https://arxiv.org/abs/2402.12068){:target="_blank"} [[WALE'24 Poster]]({{ site.baseurl }}/files/WALE24poster.pdf){:target="_blank"} [[EC'24 Slides]]({{ site.baseurl }}/files/DFPAslides.pdf){:target="_blank"} [[EC'24 Talk]](https://www.youtube.com/watch?v=e3685WqhtRY){:target="_blank"}
 {: reversed="reversed"}
 
-## Preprints
+## Theses
 
 * _A Study of Variants of PPA-complete Problems_\
 **C.Kokkalis**.\
 MCompSci Thesis, University of Oxford. 2022. [[pdf]]({{ site.baseurl }}/files/thesis.pdf){:target="_blank"}
+
+* _Application of Association Schemes in Calculating and Implementing Linear Programming Bounds for Codes in SageMath_\
+**C.Kokkalis**.\
+BA Thesis, University of Oxford. 2021. [[pdf]]({{ site.baseurl }}/files/3yp.pdf){:target="_blank"}
