@@ -34,7 +34,7 @@ Please reach out to me if you are interested in giving a talk!
 
 * _Mar. 09, 2024_: In June 2024, I will be attending and presenting a poster at the Workshop on Algorithms and Economics ([WALE 2024](https://wale.gr/2024/){:target="_blank"}) in Kefalonia, Greece.
 
-## Preprints
+## Working Papers
 
 1. _Efficient Equilibrium Computation in Symmetric First-Price Auctions_\
 A. Filos-Ratsikas, Y. Giannakopoulos, A. Hollender, **C. Kokkalis**.\
