@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-I'm a third-year PhD candidate at the University of Edinburgh, where I'm fortunate to be advised by Dr. [Aris Filos-Ratsikas](https://arisfilosratsikas.com/){:target="_blank"}, within the [Laboratory for Foundations of Computer Science](https://web.inf.ed.ac.uk/lfcs){:target="_blank"}.
+I'm a third-year PhD candidate at the University of Edinburgh, where I'm fortunate to be advised by Dr. [Aris Filos-Ratsikas](https://arisfilosratsikas.com/){:target="_blank"} and Prof. [Kousha Etessami](https://homepages.inf.ed.ac.uk/kousha/){:target="_blank"}, within the [Laboratory for Foundations of Computer Science](https://web.inf.ed.ac.uk/lfcs){:target="_blank"}.
 Prior to that, I received a [MCompSci](https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/computer-science){:target="_blank"} from the University of Oxford, where I was also fortunate to be supervised by Prof. [Paul Goldberg](https://www.cs.ox.ac.uk/people/paul.goldberg/index1.html){:target="_blank"} for my thesis.
 
 My research interests lie in the intersection of Theoretical Computer Science and Economics, namely in the field of Algorithmic Game Theory. Recently, I have been studying problems in Auction Theory, with an emphasis on the complexity of computing equilibria in such settings.
@@ -18,11 +18,15 @@ Please reach out to me if you are interested in giving a talk!
 
 ## News
 
-* _May. 27, 2025_: I gave a talk at the [Formal Analysis, Theory and Algortithms (FATA)](https://www.gla.ac.uk/schools/computing/research/researchsections/fata-section){:target="_blank"} Seminar of the University of Glasgow!
+* _May 18, 2026_: Our paper [On the Computation of Equilibria in Discrete First-Price Auctions](https://arxiv.org/abs/2402.12068){:target="_blank"} has been accepted to the [SIAM Journal on Computing (SICOMP)](https://www.siam.org/publications/siam-journals/siam-journal-on-computing/){:target="_blank"}.
+
+* _Apr. 30, 2026_: I will participate and give a talk in the 2nd UK Workshop for Junior Researchers in Economics and Computation ([JECCO 2026](https://jecco2026.gitlab.io/){:target="_blank"}), which will take place in Oxford, on 21-22 July 2026.
+
+* _May 27, 2025_: I gave a talk at the [Formal Analysis, Theory and Algortithms (FATA)](https://www.gla.ac.uk/schools/computing/research/researchsections/fata-section){:target="_blank"} Seminar of the University of Glasgow!
 
 * _May 14, 2025_: Our paper [Equilibrium Computation in First-Price Auctions with Correlated Priors](https://arxiv.org/abs/2506.05322){:target="_blank"} has been accepted to [EC'25](https://ec25.sigecom.org/){:target="_blank"} - see you in Stanford!
 
-* _May 13, 2025_: I will participate in the 1st UK Workshop for Junior Researchers in Economics and Computation ([JECCO 2025](https://jecco2025.gitlab.io/){:target="_blank"}), which will take place in Edinburgh, on 15-16 June 2025.
+* _May 13, 2025_: I will participate and give a talk in the 1st UK Workshop for Junior Researchers in Economics and Computation ([JECCO 2025](https://jecco2025.gitlab.io/){:target="_blank"}), which will take place in Edinburgh, on 15-16 June 2025.
 
 * _Apr. 29, 2025_: I gave a talk at the Theory Seminar of the [Archimedes Research Unit](https://archimedesai.gr/en/){:target="_blank"} in Athens! 
 
@@ -50,7 +54,8 @@ A. Filos-Ratsikas, Y. Giannakopoulos, A. Hollender, **C. Kokkalis**.\
 
 1. _On the Computation of Equilibria in Discrete First-Price Auctions_\
 A. Filos-Ratsikas, Y. Giannakopoulos, A. Hollender, **C. Kokkalis**.\
-25th ACM Conference on Economics and Computation **(EC'24)**\
+SIAM Journal on Computing **(SICOMP)**, to appear, 2026 \
+Preliminary version: 25th ACM Conference on Economics and Computation **(EC'24)**\
 [[arXiv]](https://arxiv.org/abs/2402.12068){:target="_blank"} [[WALE'24 Poster]]({{ site.baseurl }}/files/WALE24poster.pdf){:target="_blank"} [[EC'24 Slides]]({{ site.baseurl }}/files/DFPAslides.pdf){:target="_blank"} [[EC'24 Talk]](https://www.youtube.com/watch?v=e3685WqhtRY){:target="_blank"}
 {: reversed="reversed"}
 
