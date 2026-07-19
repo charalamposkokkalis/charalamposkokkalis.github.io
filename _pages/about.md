@@ -17,6 +17,7 @@ I'm also organizing the weekly [Edinburgh CS/Econ Seminar]({{ site.baseurl }}/se
 Please reach out to me if you are interested in giving a talk!
 
 ## News
+* _May 29, 2026_: In July 2026, I will be presenting a poster at the Work­shop on Al­go­rithms for Learn­ing and Eco­nom­ics [(WALE 2026)](https://wale.gr/2026/){:target="_blank"} in Lemnos, Greece.
 
 * _May 18, 2026_: Our paper [On the Computation of Equilibria in Discrete First-Price Auctions](https://arxiv.org/abs/2402.12068){:target="_blank"} has been accepted to the [SIAM Journal on Computing (SICOMP)](https://www.siam.org/publications/siam-journals/siam-journal-on-computing/){:target="_blank"}.
 
@@ -36,14 +37,13 @@ Please reach out to me if you are interested in giving a talk!
 
 * _May 18, 2024_: Our paper [On the Computation of Equilibria in Discrete First-Price Auctions](https://arxiv.org/abs/2402.12068){:target="_blank"} has been accepted to [EC'24](https://ec24.sigecom.org/){:target="_blank"} - see you in New Haven!
 
-* _Mar. 09, 2024_: In June 2024, I will be attending and presenting a poster at the Workshop on Algorithms and Economics ([WALE 2024](https://wale.gr/2024/){:target="_blank"}) in Kefalonia, Greece.
+* _Mar. 09, 2024_: In June 2024, I will be attending and presenting a poster at the Work­shop on Al­go­rithms for Learn­ing and Eco­nom­ics ([WALE 2024](https://wale.gr/2024/){:target="_blank"}) in Kefalonia, Greece.
 
 ## Working Papers
 
 1. _Efficient Equilibrium Computation in Symmetric First-Price Auctions_\
 A. Filos-Ratsikas, Y. Giannakopoulos, A. Hollender, **C. Kokkalis**.\
-[[arXiv]](https://arxiv.org/abs/2603.24317){:target="_blank"}
-{: reversed="reversed"}
+[[arXiv]](https://arxiv.org/abs/2603.24317){:target="_blank"} [[WALE'26 Poster]]({{ site.baseurl }}/files/WALE26poster.pdf){:target="_blank"}{: reversed="reversed"}
 
 ## Publications
 
