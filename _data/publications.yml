@@ -1,0 +1,225 @@
+# ---------------------------------------------------------------------------
+# Publication records. Rendered by _pages/publications.html.
+#
+# Fields
+#   type      : conference | journal | working | thesis
+#               Drives the coloured [C#]/[J#]/[W#]/[T#] tag on the left.
+#   date      : "YYYY-MM-DD" string. Sorts the list and picks the year heading.
+#   title     : paper title
+#   url       : (optional) where the title links to — usually the publisher
+#               page. Omit and the title is plain text.
+#   id        : (optional) HTML id for the row, so you can link to /publications/#id
+#   authors   : list of ids from _data/coauthors.yml, in author order.
+#   venue     : short  -> the bold abbreviation, e.g. "EC '24", "SICOMP"
+#               full   -> spelled-out name / volume-page details
+#               url    -> (optional) link on the abbreviation
+#               doi    -> (optional) bare DOI, e.g. 10.1137/24M1708061
+#               bibtex -> (optional) BibTeX for THIS version
+#               prefix -> (optional) overrides the leading "In ", e.g.
+#                         "To appear in " for accepted-but-unpublished papers
+#
+# BibTeX notes (checked by compiling against plain/alpha/abbrv + biblatex):
+#   - For preprints use `howpublished = {arXiv:XXXX.XXXXX [cs.XX]}`. The
+#     arXiv-canonical eprint/archivePrefix/primaryClass trio is silently
+#     IGNORED by classic .bst styles, which would print a citation with no
+#     identifier at all. howpublished renders correctly under both.
+#   - Classic .bst styles lowercase titles ("On the computation of ..."), which
+#     is normal. If a title contains a proper noun, brace-protect just that
+#     word so it survives: title = {{N}ash equilibria in ...}.
+#   preliminary : (optional) same shape as `venue`. Printed as an extra
+#                 "Preliminary version in ..." line under the main venue.
+#                 Independent of whether that conference version is also
+#                 listed as its own entry — to list it separately, just add a
+#                 normal record with type: conference.
+#   links     : ordered list of {label, url} shown on the title row —
+#               arXiv, slides, poster, talk, pdf, ...
+#               doi and bibtex do NOT go here: they belong to a specific
+#               version, so they live inside `venue`/`preliminary` and are
+#               rendered on the venue line.
+# ---------------------------------------------------------------------------
+
+# --- Journal papers --------------------------------------------------------
+
+- type: journal
+  date: "2026-09-01"
+  id: "discrete-fpa-sicomp"
+  title: "On the Computation of Equilibria in Discrete First-Price Auctions"
+  url: "https://doi.org/10.1137/24M1708061"
+  authors:
+    - aris-filos-ratsikas
+    - yiannis-giannakopoulos
+    - alexandros-hollender
+    - self
+  venue:
+    short: "SICOMP"
+    full: "SIAM Journal on Computing, 55(5): 851–902, 2026."
+    url: "https://www.siam.org/publications/siam-journals/siam-journal-on-computing/"
+    doi: "10.1137/24M1708061"
+    bibtex: |
+      @article{FGHK26,
+        author  = {Filos-Ratsikas, Aris and Giannakopoulos, Yiannis and
+                   Hollender, Alexandros and Kokkalis, Charalampos},
+        title   = {On the Computation of Equilibria in Discrete First-Price Auctions},
+        journal = {SIAM Journal on Computing},
+        volume  = {55},
+        number  = {5},
+        pages   = {851--902},
+        year    = {2026},
+        doi     = {10.1137/24M1708061},
+      }
+  preliminary:
+    short: "EC '24"
+    full: "Proc. of the 25th ACM Conference on Economics and Computation, pp. 379–399."
+    url: "https://ec24.sigecom.org/"
+    doi: "10.1145/3670865.3673509"
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2402.12068"
+
+# --- Conference papers -----------------------------------------------------
+
+- type: conference
+  date: "2025-07-07"
+  id: "correlated-priors-ec25"
+  title: "Equilibrium Computation in First-Price Auctions with Correlated Priors"
+  url: "https://doi.org/10.1145/3736252.3742487"
+  authors:
+    - aris-filos-ratsikas
+    - yiannis-giannakopoulos
+    - alexandros-hollender
+    - self
+  venue:
+    short: "EC '25"
+    full: "Proc. of the 26th ACM Conference on Economics and Computation, pp. 7–33."
+    url: "https://ec25.sigecom.org/"
+    doi: "10.1145/3736252.3742487"
+    bibtex: |
+      @inproceedings{FGHK25,
+        author    = {Filos-Ratsikas, Aris and Giannakopoulos, Yiannis and
+                     Hollender, Alexandros and Kokkalis, Charalampos},
+        title     = {Equilibrium Computation in First-Price Auctions with Correlated Priors},
+        booktitle = {Proceedings of the 26th ACM Conference on Economics and Computation},
+        series    = {EC '25},
+        publisher = {ACM},
+        pages     = {7--33},
+        year      = {2025},
+        doi       = {10.1145/3736252.3742487},
+      }
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2506.05322"
+    - label: "slides"
+      url: "/files/EC25_slides.pdf"
+
+- type: conference
+  date: "2026-12-01"
+  id: "pacing-wine26"
+  title: "Nash Equilibria in Auctions with Pacing Strategies: Complexity and Inefficiency"
+  url: "https://wine2026conf.github.io/"
+  authors:
+    - aris-filos-ratsikas
+    - self
+    - mohamad-latifian
+  venue:
+    short: "WINE '26"
+    prefix: "To appear in "
+    full: "the 22nd Conference on Web and Internet Economics."
+    url: "https://wine2026conf.github.io/"
+
+# Conference version of the SICOMP paper above, listed in its own right.
+- type: conference
+  date: "2024-07-08"
+  id: "discrete-fpa-ec24"
+  title: "On the Computation of Equilibria in Discrete First-Price Auctions"
+  url: "https://doi.org/10.1145/3670865.3673509"
+  authors:
+    - aris-filos-ratsikas
+    - yiannis-giannakopoulos
+    - alexandros-hollender
+    - self
+  venue:
+    short: "EC '24"
+    full: "Proc. of the 25th ACM Conference on Economics and Computation, pp. 379–399."
+    url: "https://ec24.sigecom.org/"
+    doi: "10.1145/3670865.3673509"
+    bibtex: |
+      @inproceedings{FGHK24,
+        author    = {Filos-Ratsikas, Aris and Giannakopoulos, Yiannis and
+                     Hollender, Alexandros and Kokkalis, Charalampos},
+        title     = {On the Computation of Equilibria in Discrete First-Price Auctions},
+        booktitle = {Proceedings of the 25th ACM Conference on Economics and Computation},
+        series    = {EC '24},
+        publisher = {ACM},
+        pages     = {379--399},
+        year      = {2024},
+        doi       = {10.1145/3670865.3673509},
+      }
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2402.12068"
+    - label: "slides"
+      url: "/files/DFPAslides.pdf"
+    - label: "poster"
+      url: "/files/WALE24poster.pdf"
+    - label: "talk"
+      url: "https://www.youtube.com/watch?v=e3685WqhtRY"
+
+# --- Working papers / preprints -------------------------------------------
+
+- type: working
+  date: "2026-03-25"
+  id: "symmetric-fpa"
+  title: "Efficient Equilibrium Computation in Symmetric First-Price Auctions"
+  url: "https://arxiv.org/abs/2603.24317"
+  authors:
+    - aris-filos-ratsikas
+    - yiannis-giannakopoulos
+    - alexandros-hollender
+    - self
+  venue:
+    short: "Preprint"
+    full: "Under submission."
+    bibtex: |
+      @misc{FGHK26b,
+        author       = {Filos-Ratsikas, Aris and Giannakopoulos, Yiannis and
+                        Hollender, Alexandros and Kokkalis, Charalampos},
+        title        = {Efficient Equilibrium Computation in Symmetric First-Price Auctions},
+        year         = {2026},
+        howpublished = {arXiv:2603.24317 [cs.GT]},
+      }
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2603.24317"
+    - label: "poster"
+      url: "/files/WALE26poster.pdf"
+
+# --- Theses ----------------------------------------------------------------
+# Listed in their own section at the bottom, not in the year-by-year list.
+
+- type: thesis
+  date: "2022-05-01"
+  id: "mcompsci-thesis"
+  title: "A Study of Variants of PPA-complete Problems"
+  url: "/files/thesis.pdf"
+  authors:
+    - self
+  venue:
+    short: "MCompSci thesis"
+    full: "University of Oxford, 2022. Supervised by Paul W. Goldberg."
+  links:
+    - label: "pdf"
+      url: "/files/thesis.pdf"
+
+- type: thesis
+  date: "2021-05-01"
+  id: "ba-thesis"
+  title: "Application of Association Schemes in Calculating and Implementing Linear Programming Bounds for Codes in SageMath"
+  url: "/files/3yp.pdf"
+  authors:
+    - self
+  venue:
+    short: "BA thesis"
+    full: "University of Oxford, 2021."
+  links:
+    - label: "pdf"
+      url: "/files/3yp.pdf"

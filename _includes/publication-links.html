@@ -1,0 +1,21 @@
+{%- comment -%}
+Small pill links on the title row: arXiv, slides, poster, talk, ...
+
+Usage: {% include publication-links.html pub=pub %}
+
+doi and bibtex deliberately do NOT live here — they belong to a specific
+version of the paper, so publication-venue.html renders them on the venue
+line instead. That keeps the title row short.
+{%- endcomment -%}
+{%- assign pub = include.pub -%}
+{%- if pub.links -%}
+<span class="publication__links" aria-label="Publication resources">
+  {%- for l in pub.links -%}
+    {%- if l.url contains "://" -%}
+  <a class="publication__link" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>
+    {%- else -%}
+  <a class="publication__link" href="{{ l.url | relative_url }}" target="_blank" rel="noopener">{{ l.label }}</a>
+    {%- endif -%}
+  {%- endfor -%}
+</span>
+{%- endif -%}

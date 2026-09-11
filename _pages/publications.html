@@ -1,0 +1,73 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{%- comment -%}
+  Everything on this page is generated from _data/publications.yml and
+  _data/coauthors.yml. To add a paper, edit those files — not this one.
+{%- endcomment -%}
+
+{%- assign all = site.data.publications -%}
+{%- assign papers = all | where_exp: "p", "p.type != 'thesis'" | sort: "date" | reverse -%}
+{%- assign theses = all | where: "type", "thesis" | sort: "date" | reverse -%}
+
+{%- comment -%}
+  The [C#]/[J#]/[W#] tags count *down* from the total, so the newest paper of
+  each kind carries the highest number. CSS counters start at total + 1 and
+  each row decrements by one.
+{%- endcomment -%}
+{%- assign n_conf    = all | where: "type", "conference" | size | plus: 1 -%}
+{%- assign n_journal = all | where: "type", "journal"    | size | plus: 1 -%}
+{%- assign n_working = all | where: "type", "working"    | size | plus: 1 -%}
+{%- assign n_thesis  = theses | size | plus: 1 -%}
+
+<p class="pub-intro">
+  {%- if site.author.googlescholar %}
+  A full list is also on my <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar profile</a>.
+  {%- endif %}
+  Authors are listed alphabetically, as is standard in theoretical computer science.
+</p>
+
+<div class="pub-legend">
+  <span class="pub-legend__item"><span class="pub-tag pub-tag--journal">J</span> journal</span>
+  <span class="pub-legend__item"><span class="pub-tag pub-tag--conference">C</span> conference</span>
+  <span class="pub-legend__item"><span class="pub-tag pub-tag--working">W</span> working paper</span>
+  {%- if theses.size > 0 %}
+  <span class="pub-legend__item"><span class="pub-tag pub-tag--thesis">T</span> thesis</span>
+  {%- endif %}
+</div>
+
+<div class="pub-list" style="counter-reset: confs {{ n_conf }} journals {{ n_journal }} workings {{ n_working }} theses {{ n_thesis }};">
+
+  {%- assign current_year = "" -%}
+  {%- for pub in papers -%}
+    {%- assign year = pub.date | slice: 0, 4 -%}
+    {%- if year != current_year -%}
+      {%- unless forloop.first %}
+  </ul>
+      {%- endunless %}
+  <h2 class="pub-year" id="year-{{ year }}">{{ year }}</h2>
+  <ul class="pub">
+      {%- assign current_year = year -%}
+    {%- endif %}
+    {% include publication-entry.html pub=pub index=forloop.index %}
+    {%- if forloop.last %}
+  </ul>
+    {%- endif -%}
+  {%- endfor %}
+
+  {%- if theses.size > 0 %}
+  <h2 class="pub-year" id="theses">Theses</h2>
+  <ul class="pub">
+    {%- for pub in theses %}
+    {% include publication-entry.html pub=pub index=pub.date %}
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+
+</div>
+
+<script src="{{ '/assets/js/publications.js' | relative_url }}"></script>

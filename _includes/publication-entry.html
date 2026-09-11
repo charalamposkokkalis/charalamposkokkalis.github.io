@@ -1,0 +1,53 @@
+{%- comment -%}
+One publication row: [tag] title + links / authors / venue line(s).
+
+Usage: {% include publication-entry.html pub=pub index=forloop.index %}
+
+The [C#]/[J#]/[W#]/[T#] tag is not written here — it comes from the CSS
+counter on .pub-item--<type> in _sass/_publications.scss, so the numbering
+stays correct automatically as papers are added.
+
+A paper that also appeared in a preliminary conference version gets a second
+venue line from `preliminary:`. That is independent of whether the conference
+version is ALSO listed as its own entry in the year list — list it separately
+by adding a normal record with type: conference.
+{%- endcomment -%}
+{%- assign pub = include.pub -%}
+<li class="pub-item pub-item--{{ pub.type }}"{% if pub.id %} id="{{ pub.id }}"{% endif %}>
+  <div class="pub-item__body" itemscope itemtype="https://schema.org/ScholarlyArticle">
+    <div class="publication__header">
+      {%- if pub.url -%}
+        {%- if pub.url contains "://" -%}
+      <a class="publication__title" href="{{ pub.url }}" target="_blank" rel="noopener" itemprop="name">{{ pub.title }}</a>
+        {%- else -%}
+      <a class="publication__title" href="{{ pub.url | relative_url }}" target="_blank" rel="noopener" itemprop="name">{{ pub.title }}</a>
+        {%- endif -%}
+      {%- else -%}
+      <span class="publication__title" itemprop="name">{{ pub.title }}</span>
+      {%- endif -%}
+      {% include publication-links.html pub=pub %}
+    </div>
+
+    <div class="pub-authors">By {% include publication-authors.html authors=pub.authors %}</div>
+
+    {%- if pub.venue -%}
+      {%- comment -%}
+        Default prefix is "In "; theses and preprints get none. A venue can
+        override it with `prefix:` — e.g. "To appear in " for accepted-but-
+        not-yet-published papers.
+      {%- endcomment -%}
+      {%- assign prefix = pub.venue.prefix -%}
+      {%- unless prefix -%}
+        {%- assign prefix = "In " -%}
+        {%- if pub.type == 'thesis' or pub.type == 'working' -%}{%- assign prefix = "" -%}{%- endif -%}
+      {%- endunless -%}
+      {%- capture uid %}{{ include.index }}-v{% endcapture -%}
+      {% include publication-venue.html venue=pub.venue prefix=prefix uid=uid %}
+    {%- endif -%}
+
+    {%- if pub.preliminary -%}
+      {%- capture uid %}{{ include.index }}-p{% endcapture -%}
+      {% include publication-venue.html venue=pub.preliminary prefix="Preliminary version in " uid=uid modifier="prelim" %}
+    {%- endif -%}
+  </div>
+</li>

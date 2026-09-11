@@ -1,0 +1,33 @@
+{%- comment -%}
+One venue line: "In <SHORT>: full details." followed by that version's own
+doi / bibtex pills, plus the (hidden) bibtex panel it expands.
+
+Usage:
+  {% include publication-venue.html venue=pub.venue prefix="In " uid="1-v" %}
+
+Keeping doi and bibtex here rather than on the title row means a paper with
+both a journal and a preliminary conference version gets the right pair of
+links on each line.
+{%- endcomment -%}
+{%- assign v = include.venue -%}
+<div class="pub-venue{% if include.modifier %} pub-venue--{{ include.modifier }}{% endif %}">
+  {{- include.prefix -}}
+  {%- if v.url -%}
+    <a class="pub-venue__short" href="{{ v.url }}" target="_blank" rel="noopener">{{ v.short }}</a>
+  {%- else -%}
+    <span class="pub-venue__short">{{ v.short }}</span>
+  {%- endif -%}
+  {%- if v.full %}: {{ v.full }}{% endif -%}
+  {%- if v.doi or v.bibtex %}
+  <span class="pub-venue__links">
+    {%- if v.doi %}<a class="publication__link publication__link--inline" href="https://doi.org/{{ v.doi }}" target="_blank" rel="noopener">doi</a>{% endif -%}
+    {%- if v.bibtex %}<button type="button" class="publication__link publication__link--inline publication__link--btn" data-bibtex-toggle aria-expanded="false" aria-controls="bibtex-{{ include.uid }}">bibtex</button>{% endif -%}
+  </span>
+  {%- endif -%}
+</div>
+{%- if v.bibtex %}
+<div class="pub-bibtex" id="bibtex-{{ include.uid }}" hidden>
+  <button type="button" class="pub-bibtex__copy" data-bibtex-copy>Copy</button>
+  <pre><code>{{ v.bibtex | strip | xml_escape }}</code></pre>
+</div>
+{%- endif -%}

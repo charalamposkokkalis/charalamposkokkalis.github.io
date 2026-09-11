@@ -1,7 +1,7 @@
 # main links links
 main:
-  # - title: "Publications"
-  #   url: /publications/
+  - title: "Publications"
+    url: /publications/
 
   # - title: "Talks"
   #   url: /talks/    
@@ -18,8 +18,9 @@ main:
   - title: "CV"
     url: /cv/
 
-  - title: "CS/Econ Seminar"
-    url: /seminar/
+  # Hidden for now — the page itself still lives at /seminar/.
+  # - title: "CS/Econ Seminar"
+  #   url: /seminar/
     
   # - title: "Guide"
   #   url: /markdown/

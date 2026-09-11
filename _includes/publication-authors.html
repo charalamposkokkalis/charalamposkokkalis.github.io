@@ -1,0 +1,25 @@
+{%- comment -%}
+Renders an author list from ids in _data/coauthors.yml.
+
+Usage: {% include publication-authors.html authors=pub.authors %}
+
+Produces "A", "A and B", "A, B, and C". Your own entry (me: true) is bold
+and unlinked; co-authors with a `url` become links; everyone else is plain
+text. An id with no entry in coauthors.yml renders visibly flagged so the
+typo is obvious rather than silent.
+{%- endcomment -%}
+{%- for id in include.authors -%}
+  {%- assign a = site.data.coauthors[id] -%}
+  {%- unless forloop.first -%}
+    {%- if forloop.length == 2 %} and {% elsif forloop.last %}, and {% else %}, {% endif -%}
+  {%- endunless -%}
+  {%- if a == nil -%}
+    <span class="pub-author--unknown" title="No entry for &quot;{{ id }}&quot; in _data/coauthors.yml">{{ id }}</span>
+  {%- elsif a.me -%}
+    <strong>{{ a.name }}</strong>
+  {%- elsif a.url and a.url != "" -%}
+    <a href="{{ a.url }}" target="_blank" rel="noopener">{{ a.name }}</a>
+  {%- else -%}
+    {{ a.name }}
+  {%- endif -%}
+{%- endfor -%}

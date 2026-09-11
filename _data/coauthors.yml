@@ -1,0 +1,37 @@
+# ---------------------------------------------------------------------------
+# Co-author registry.
+#
+# Each top-level key is a short id you reference from _data/publications.yml
+# in the `authors:` list. Keep ids stable; change `name`/`url` freely.
+#
+#   name : the name as it should be printed
+#   url  : (optional) personal homepage. If present the name becomes a link,
+#          if absent or blank the name is printed as plain text.
+#   me   : set on your own entry only. That name is rendered in bold and is
+#          never turned into a link.
+#
+# To add a co-author: add a block here, then use its id in a paper's
+# `authors:` list. Nothing else needs to change.
+# ---------------------------------------------------------------------------
+
+self:
+  name: "Charalampos Kokkalis"
+  me: true
+
+aris-filos-ratsikas:
+  name: "Aris Filos-Ratsikas"
+  url: "https://arisfilosratsikas.com/"
+
+yiannis-giannakopoulos:
+  name: "Yiannis Giannakopoulos"
+  url: "https://yiannisgiannakopoulos.com/"
+
+alexandros-hollender:
+  name: "Alexandros Hollender"
+  # Placeholder: his All Souls College profile. Swap for a personal homepage
+  # if he sets one up.
+  url: "https://www.asc.ox.ac.uk/people/dr-alexandros-hollender"
+
+mohamad-latifian:
+  name: "Mohamad Latifian"
+  url: "https://www.latifian.me/"

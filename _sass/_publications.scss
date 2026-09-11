@@ -1,0 +1,299 @@
+/* ==========================================================================
+   PUBLICATIONS
+   Year-grouped publication list with [C#]/[J#]/[W#]/[T#] tags, linked
+   co-authors and small resource pills (arXiv / doi / bibtex / ...).
+   Markup lives in _pages/publications.html + _includes/publication-*.html.
+   ========================================================================== */
+
+$pub-conference-color : #304f7c;
+$pub-journal-color    : #288a38;
+$pub-working-color    : #c86600;
+$pub-thesis-color     : #5c6570;
+
+.pub-intro {
+  margin-bottom: 0.75em;
+  font-size: $type-size-6;
+}
+
+/* --- legend ------------------------------------------------------------- */
+
+.pub-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin-bottom: 1.5rem;
+  color: $gray;
+  font-family: $sans-serif;
+  font-size: $type-size-7;
+}
+
+.pub-legend__item {
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* --- year headings ------------------------------------------------------ */
+
+.pub-year {
+  margin: 2rem 0 0.35rem;
+  padding-bottom: 0.3rem;
+  font-family: $sans-serif;
+  font-size: $type-size-4;
+  border-bottom: 1px solid $border-color;
+
+  &:first-of-type {
+    margin-top: 0.5rem;
+  }
+}
+
+/* --- list + tags -------------------------------------------------------- */
+
+ul.pub {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pub-item {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 1.35rem;
+  padding: 0;
+}
+
+.pub-item__body {
+  flex: 1 1 auto;
+  min-width: 0; /* lets long titles wrap instead of overflowing the flex row */
+}
+
+/* The tag itself. Numbering comes from CSS counters seeded on .pub-list, so
+   it stays correct as papers are added — nothing to renumber by hand. */
+.pub-item::before,
+.pub-tag {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  min-width: 2rem;
+  margin: 0.1rem 0.65rem 0 0;
+  padding: 0.15rem 0.35rem;
+  color: #fff;
+  font-family: $sans-serif;
+  font-size: $type-size-7;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+
+.pub-tag {
+  display: inline-block;
+  margin: 0;
+  min-width: 1.5rem;
+}
+
+.pub-item--conference {
+  counter-increment: confs -1;
+
+  &::before {
+    content: "C" counter(confs);
+    background-color: $pub-conference-color;
+  }
+}
+
+.pub-item--journal {
+  counter-increment: journals -1;
+
+  &::before {
+    content: "J" counter(journals);
+    background-color: $pub-journal-color;
+  }
+}
+
+.pub-item--working {
+  counter-increment: workings -1;
+
+  &::before {
+    content: "W" counter(workings);
+    background-color: $pub-working-color;
+  }
+}
+
+.pub-item--thesis {
+  counter-increment: theses -1;
+
+  &::before {
+    content: "T" counter(theses);
+    background-color: $pub-thesis-color;
+  }
+}
+
+.pub-tag--conference { background-color: $pub-conference-color; }
+.pub-tag--journal    { background-color: $pub-journal-color; }
+.pub-tag--working    { background-color: $pub-working-color; }
+.pub-tag--thesis     { background-color: $pub-thesis-color; }
+
+/* --- title row ---------------------------------------------------------- */
+
+.publication__header {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.35rem;
+}
+
+.archive a.publication__title,
+.publication__title {
+  color: $text-color;
+  font-family: $serif;
+  font-size: 1.03rem;
+  font-weight: bold;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.archive a.publication__title:hover {
+  color: $link-color-hover;
+  text-decoration: underline;
+}
+
+/* --- resource pills ----------------------------------------------------- */
+
+.publication__links {
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: flex-end;
+}
+
+.archive a.publication__link,
+.publication__link {
+  display: inline-block;
+  margin: 0;
+  padding: 0.24rem 0.5rem;
+  color: $link-color;
+  font-family: $sans-serif;
+  font-size: $type-size-7;
+  font-weight: 600;
+  line-height: 1.1;
+  text-decoration: none;
+  white-space: nowrap;
+  background: mix(#fff, $link-color, 92%);
+  border: 1px solid mix(#fff, $link-color, 60%);
+  border-radius: 999px;
+  cursor: pointer;
+
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: none;
+    background: mix(#fff, $link-color, 80%);
+    border-color: mix(#fff, $link-color, 35%);
+  }
+
+  &:focus {
+    outline: 2px solid mix(#fff, $link-color, 25%);
+    outline-offset: 2px;
+  }
+}
+
+.publication__link--btn {
+  font-family: $sans-serif; /* buttons do not inherit the page font */
+}
+
+/* doi / bibtex sit on the venue line rather than the title row, so they stay
+   attached to the version they belong to. Slightly tighter than title pills
+   so they read as part of the running text. */
+.pub-venue__links {
+  display: inline-flex;
+  gap: 0.3rem;
+  margin-left: 0.4rem;
+  vertical-align: baseline;
+}
+
+.archive a.publication__link--inline,
+.publication__link--inline {
+  padding: 0.1rem 0.42rem;
+  font-size: $type-size-8;
+  vertical-align: baseline;
+}
+
+/* --- author + venue lines ----------------------------------------------- */
+
+.pub-authors,
+.pub-venue {
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  line-height: 1.5;
+}
+
+.pub-venue__short {
+  font-weight: 600;
+}
+
+.pub-venue--prelim {
+  color: $gray;
+}
+
+.pub-author--unknown {
+  color: $danger-color;
+  text-decoration: underline wavy;
+}
+
+/* --- inline bibtex ------------------------------------------------------ */
+
+.pub-bibtex {
+  position: relative;
+  margin-top: 0.6rem;
+
+  pre {
+    margin: 0;
+    padding: 0.75rem 4.5rem 0.75rem 0.75rem;
+    font-size: $type-size-7;
+    line-height: 1.45;
+    background: $code-background-color;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    overflow-x: auto;
+  }
+
+  code {
+    background: transparent;
+    border: 0;
+  }
+}
+
+.pub-bibtex__copy {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  color: $text-color;
+  font-family: $sans-serif;
+  font-size: $type-size-8;
+  font-weight: 600;
+  background: #fff;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    color: $link-color-hover;
+    border-color: mix(#fff, $link-color, 50%);
+  }
+}
+
+/* --- narrow screens ----------------------------------------------------- */
+
+@media screen and (max-width: 37.5em) {
+  .publication__header {
+    display: block;
+  }
+
+  .publication__links {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+  }
+}
