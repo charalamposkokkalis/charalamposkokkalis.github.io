@@ -115,7 +115,7 @@
   date: "2026-12-01"
   id: "pacing-wine26"
   title: "Nash Equilibria in Auctions with Pacing Strategies: Complexity and Inefficiency"
-  url: "https://wine2026conf.github.io/"
+  url: "https://arxiv.org/abs/2609.34515"
   authors:
     - aris-filos-ratsikas
     - self
@@ -125,6 +125,9 @@
     prefix: "To appear in "
     full: "the 22nd Conference on Web and Internet Economics."
     url: "https://wine2026conf.github.io/"
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2609.34515"
 
 # Conference version of the SICOMP paper above, listed in its own right.
 - type: conference

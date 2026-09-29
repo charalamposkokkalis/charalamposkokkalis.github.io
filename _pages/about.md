@@ -14,7 +14,7 @@ Prior to that, I received a [MCompSci](https://www.ox.ac.uk/admissions/undergrad
 My research interests lie in the intersection of Theoretical Computer Science and Economics, namely in the field of Algorithmic Game Theory. Recently, I have been studying problems in Auction Theory, with an emphasis on the complexity of computing equilibria in such settings.
 
 ## News
-* _Sep. 11, 2026_: Our paper "Nash Equilibria in Auctions with Pacing Strategies: Complexity and Inefficiency" has been accepted to [WINE 2026](https://wine2026conf.github.io/){:target="_blank"} - see you in Hong Kong!
+* _Sep. 11, 2026_: Our paper [Nash Equilibria in Auctions with Pacing Strategies: Complexity and Inefficiency](https://arxiv.org/abs/2609.34515){:target="_blank"} has been accepted to [WINE 2026](https://wine2026conf.github.io/){:target="_blank"} - see you in Hong Kong!
 
 * _May 29, 2026_: In July 2026, I will be presenting a poster at the Work­shop on Al­go­rithms for Learn­ing and Eco­nom­ics [(WALE 2026)](https://wale.gr/2026/){:target="_blank"} in Lemnos, Greece.
 
