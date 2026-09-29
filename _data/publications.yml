@@ -125,6 +125,16 @@
     prefix: "To appear in "
     full: "the 22nd Conference on Web and Internet Economics."
     url: "https://wine2026conf.github.io/"
+    # arXiv version; replace with the proceedings entry once WINE '26 is out.
+    bibtex: |
+      @misc{FKL26,
+        author       = {Filos-Ratsikas, Aris and Kokkalis, Charalampos and
+                        Latifian, Mohamad},
+        title        = {{N}ash Equilibria in Auctions with Pacing Strategies:
+                        Complexity and Inefficiency},
+        year         = {2026},
+        howpublished = {arXiv:2609.34515 [cs.GT]},
+      }
   links:
     - label: "arXiv"
       url: "https://arxiv.org/abs/2609.34515"
