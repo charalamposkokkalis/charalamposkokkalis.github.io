@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-I'm a third-year PhD candidate at the University of Edinburgh, where I'm fortunate to be advised by Dr. [Aris Filos-Ratsikas](https://arisfilosratsikas.com/){:target="_blank"} and Prof. [Kousha Etessami](https://homepages.inf.ed.ac.uk/kousha/){:target="_blank"}, within the [Laboratory for Foundations of Computer Science](https://web.inf.ed.ac.uk/lfcs){:target="_blank"}.
+I'm a fourth-year PhD candidate at the University of Edinburgh, where I'm fortunate to be advised by Dr. [Aris Filos-Ratsikas](https://arisfilosratsikas.com/){:target="_blank"} and Prof. [Kousha Etessami](https://homepages.inf.ed.ac.uk/kousha/){:target="_blank"}, within the [Laboratory for Foundations of Computer Science](https://web.inf.ed.ac.uk/lfcs){:target="_blank"}.
 Prior to that, I received a [MCompSci](https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/computer-science){:target="_blank"} from the University of Oxford, where I was also fortunate to be supervised by Prof. [Paul Goldberg](https://www.cs.ox.ac.uk/people/paul.goldberg/index1.html){:target="_blank"} for my thesis.
 
 My research interests lie in the intersection of Theoretical Computer Science and Economics, namely in the field of Algorithmic Game Theory. Recently, I have been studying problems in Auction Theory, with an emphasis on the complexity of computing equilibria in such settings.
